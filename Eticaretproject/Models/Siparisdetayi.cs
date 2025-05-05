@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Eticaretproject.Models;
 
 public partial class Siparisdetayi
 {
+
     public int SiparisDetayiId { get; set; }
 
     public int? SiparisId { get; set; }
