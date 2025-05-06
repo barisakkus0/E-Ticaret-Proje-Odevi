@@ -26,6 +26,7 @@ wwwroot\css\site.css
 wwwroot\css\slick.css
 wwwroot\css\style.css
 wwwroot\favicon.ico
+wwwroot\images\anasayfaResim.jpg
 wwwroot\images\calendar-icon.png
 wwwroot\images\call-icon.png
 wwwroot\images\camera-img.png

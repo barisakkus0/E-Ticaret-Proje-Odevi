@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mompKz4iCZtNHvPeEEZFIYGk9JDhuqa8tHVgfE29KoQ=",
+  "Hash": "0is49OFaFZR8wnt/fhsvuwA2LYLrMV5ItckQH7TbkwE=",
   "Source": "Eticaretproject",
   "BasePath": "_content/Eticaretproject",
   "Mode": "Default",
@@ -645,6 +645,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\İsa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\wwwroot\\images\\anasayfaResim.jpg",
+      "SourceId": "Eticaretproject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\İsa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\wwwroot\\",
+      "BasePath": "_content/Eticaretproject",
+      "RelativePath": "images/anasayfaResim#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pxmkq7f1ka",
+      "Integrity": "HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\anasayfaResim.jpg"
     },
     {
       "Identity": "C:\\Users\\İsa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\wwwroot\\images\\calendar-icon.png",
@@ -8187,6 +8208,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/anasayfaResim.jpg",
+      "AssetFile": "C:\\Users\\İsa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\wwwroot\\images\\anasayfaResim.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10795"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 21:06:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs="
+        }
+      ]
+    },
+    {
+      "Route": "images/anasayfaResim.pxmkq7f1ka.jpg",
+      "AssetFile": "C:\\Users\\İsa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\wwwroot\\images\\anasayfaResim.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10795"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 21:06:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pxmkq7f1ka"
+        },
+        {
+          "Name": "label",
+          "Value": "images/anasayfaResim.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs="
         }
       ]
     },
