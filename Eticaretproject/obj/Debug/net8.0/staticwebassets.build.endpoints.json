@@ -13861,6 +13861,88 @@
       ]
     },
     {
+      "Route": "images/anasayfaResim.jpg",
+      "AssetFile": "images/anasayfaResim.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10795"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 21:06:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs="
+        }
+      ]
+    },
+    {
+      "Route": "images/anasayfaResim.pxmkq7f1ka.jpg",
+      "AssetFile": "images/anasayfaResim.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10795"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 21:06:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pxmkq7f1ka"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HbevQpZFzmpq9nyyHoTNYGG8G8ATtgLEACJ7j90JAZs="
+        },
+        {
+          "Name": "label",
+          "Value": "images/anasayfaResim.jpg"
+        }
+      ]
+    },
+    {
       "Route": "images/calendar-icon.png",
       "AssetFile": "images/calendar-icon.png",
       "Selectors": [],
