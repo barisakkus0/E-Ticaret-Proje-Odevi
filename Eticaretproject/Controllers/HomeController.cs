@@ -1,32 +1,67 @@
-using System.Diagnostics;
-using Eticaretproject.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿    using System.Diagnostics;
+    using Eticaretproject.Models;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore; // Include için gerekli
+    using Microsoft.Extensions.Logging; // ILogger için gerekli
 
-namespace Eticaretproject.Controllers
-{
-    public class HomeController : Controller
+    namespace Eticaretproject.Controllers
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public class HomeController : Controller
         {
-            _logger = logger;
-        }
+            private readonly ILogger<HomeController> _logger;
+            private readonly EticaretContext _context;
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+            public HomeController(ILogger<HomeController> logger, EticaretContext context)
+            {
+                _logger = logger;
+                _context = context;
+            }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+            public IActionResult Index()
+            {
+                return View();
+            }
+
+            public IActionResult Privacy()
+            {
+                return View();
+            }
+
+            public IActionResult Urunler()
+            {
+                // Ürünleri kategorileriyle birlikte eager loading ile getiriyoruz
+                var urunler = _context.Urunlers.Include(u => u.Kategori).ToList();
+                return View(urunler);
+            }
+
+            public IActionResult Kategoriler()
+            {
+                var kategoriler = _context.Kategorilers.ToList();
+                return View(kategoriler);
+            }
+
+            public IActionResult Kullanicilar()
+            {
+                var kullanicilar = _context.Kullanicilars.ToList();
+                return View(kullanicilar);
+            }
+
+            public IActionResult Sepet()
+            {
+                return View();
+            }
+
+            public IActionResult Siparisler()
+            {
+                // Siparişleri kullanıcı bilgileriyle birlikte getiriyoruz
+                var siparisler = _context.Siparislers.Include(s => s.Kullanici).ToList();
+                return View(siparisler);
+            }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            public IActionResult Error()
+            {
+                return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            }
         }
     }
-}

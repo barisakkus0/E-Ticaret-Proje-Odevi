@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\baris\\onedrive\\documents\\github\\e-ticaret-proje-odevi\\eticaretproject\\controllers\\urunlercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\controllers\\urunlercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\baris\\onedrive\\documents\\github\\e-ticaret-proje-odevi\\eticaretproject\\controllers\\kullanicilarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\controllers\\kullanicilarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\baris\\onedrive\\documents\\github\\e-ticaret-proje-odevi\\eticaretproject\\controllers\\kategorilercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\controllers\\kategorilercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\baris\\onedrive\\documents\\github\\e-ticaret-proje-odevi\\eticaretproject\\controllers\\siparislerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\controllers\\siparislerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\baris\\onedrive\\documents\\github\\e-ticaret-proje-odevi\\eticaretproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\baris\\onedrive\\documents\\github\\e-ticaret-proje-odevi\\eticaretproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\baris\\onedrive\\documents\\github\\e-ticaret-proje-odevi\\eticaretproject\\migrations\\classeticaretdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\migrations\\classeticaretdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\baris\\onedrive\\documents\\github\\e-ticaret-proje-odevi\\eticaretproject\\migrations\\20250501094635_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\migrations\\20250501094635_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SiparislersController.cs",
-              "DocumentMoniker": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\SiparislersController.cs",
-              "RelativeDocumentMoniker": "Eticaretproject\\Controllers\\SiparislersController.cs",
-              "ToolTip": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\SiparislersController.cs",
-              "RelativeToolTip": "Eticaretproject\\Controllers\\SiparislersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T02:06:01.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KullanicilarController.cs",
-              "DocumentMoniker": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\KullanicilarController.cs",
-              "RelativeDocumentMoniker": "Eticaretproject\\Controllers\\KullanicilarController.cs",
-              "ToolTip": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\KullanicilarController.cs",
-              "RelativeToolTip": "Eticaretproject\\Controllers\\KullanicilarController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T02:04:43.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UrunlerController.cs",
-              "DocumentMoniker": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\UrunlerController.cs",
-              "RelativeDocumentMoniker": "Eticaretproject\\Controllers\\UrunlerController.cs",
-              "ToolTip": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\UrunlerController.cs",
-              "RelativeToolTip": "Eticaretproject\\Controllers\\UrunlerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Eticaretproject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T02:03:08.079Z",
+              "WhenOpened": "2025-05-07T06:21:44.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "KategorilerController.cs",
-              "DocumentMoniker": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\KategorilerController.cs",
-              "RelativeDocumentMoniker": "Eticaretproject\\Controllers\\KategorilerController.cs",
-              "ToolTip": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\KategorilerController.cs",
-              "RelativeToolTip": "Eticaretproject\\Controllers\\KategorilerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Title": "ClassEticaretDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Migrations\\ClassEticaretDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Migrations\\ClassEticaretDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Migrations\\ClassEticaretDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Eticaretproject\\Migrations\\ClassEticaretDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T02:02:41.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T06:00:12.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "20250501094635_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Migrations\\20250501094635_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Migrations\\20250501094635_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Migrations\\20250501094635_InitialCreate.cs",
+              "RelativeToolTip": "Eticaretproject\\Migrations\\20250501094635_InitialCreate.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T06:00:04.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Program.cs",
               "RelativeDocumentMoniker": "Eticaretproject\\Program.cs",
               "ToolTip": "C:\\Users\\baris\\OneDrive\\Documents\\GitHub\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Program.cs",
               "RelativeToolTip": "Eticaretproject\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowBUAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T22:35:24.743Z"
+              "WhenOpened": "2025-04-30T22:35:24.743Z",
+              "EditorCaption": ""
             }
           ]
         }
