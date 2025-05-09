@@ -39,32 +39,191 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
+
+    <style>
+        .box_man {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            min-height: 430px; /* Kart boylarını eşitle */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cart_main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Daha düzgün hizalama */
+            margin-top: 10px;
+        }
+
+        .left_content {
+            text-align: left;
+            flex: 1;
+        }
+
+        .right_content {
+            text-align: right;
+            margin-left: 10px;
+        }
+
+        .cart_bt a {
+            background-color: #ff4d4d;
+            color: white;
+            padding: 6px 12px;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .samsung_text {
+            font-weight: bold;
+        }
+
+        .rate_text, .rate_text_1 {
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+            .rate_text a {
+                color: #ff4d4d;
+                font-weight: bold;
+            }
+
+        .rate_text_1 {
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .like_icon {
+            color: #ccc;
+            font-size: 22px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+            .like_icon.liked {
+                color: #ff4d4d;
+            }
+
+        .rating_stars i {
+            color: #ccc;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+            .rating_stars i.filled {
+                color: gold;
+            }
+
+        .mobile_text {
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Stil bölümü -->
+    <style>
+        .logo-title {
+            margin-left: 2cm;
+            text-align: left;
+        }
+
+        .search-bar-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-form {
+            display: flex;
+            width: 60%;
+            max-width: 600px;
+            border: 2px solid orange;
+            border-radius: 30px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+            .search-form input[type="text"] {
+                flex: 1;
+                padding: 10px 20px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+            }
+
+            .search-form button {
+                background-color: orange;
+                border: none;
+                padding: 0 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .search-form button img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+        /* Kullanıcı ikonları vs. için margin düzeltmeleri istersen buradan yapılabilir */
+    </style>
+
+
 </head>
 <body>
     <!-- header section start -->
     <div class="header_section haeder_main">
         <div class="container-fluid">
-            <nav class="navbar navbar-light bg-light justify-content-between">
+            <nav class="navbar navbar-light bg-light justify-content-between align-items-center">
                 <div id="mySidenav" class="sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="index.html">Anasayfa</a>
                     <a href="computers.html">Bilgisayar</a>
                     <a href="contact.html">İletişim</a>
                 </div>
-                <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()"><img src="images/toggle-icon.png"></span>
-                <h1>OOPG19</h1>
-                <form class="form-inline ">
+
+                <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()">
+                    <img src="images/toggle-icon.png">
+                </span>
+
+                <!-- Logo and search bar in a flex container -->
+                <div class="d-flex align-items-center flex-grow-1 mx-3">
+                    <div class="logo-container mr-3">
+                        <h1 class="logo-title mb-0">OOPG19</h1>
+                    </div>
+
+                    <!-- Search bar moved here, next to the logo -->
+                    <div class="search-bar-container flex-grow-1">
+                        <form class="search-form">
+                            <input type="text" placeholder="Ürün, kategori veya marka ara">
+                            <button type="submit">
+                                <img src="images/search-icon.png" alt="Ara">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <form class="form-inline">
                     <div class="login_text">
                         <ul>
-                            <li><a href="/Kullanicilar/Login"><img src="images/user-icon.png"></a></li>
-                            <li><a href="/Sepet/Sepet"><img src="images/trolly-icon.png"></a></li>
-                            <li><a href="#"><img src="images/search-icon.png"></a></li>
+                            <li><a href="/Home/Login"><img src="images/user-icon.png"></a></li>
+                            <li><a href="/Home/Sepet"><img src="images/trolly-icon.png"></a></li>
                         </ul>
                     </div>
                 </form>
             </nav>
+            <!-- Removed the original search-bar-container from here -->
         </div>
     </div>
+
             @RenderBody()
     <!-- footer section end -->
 

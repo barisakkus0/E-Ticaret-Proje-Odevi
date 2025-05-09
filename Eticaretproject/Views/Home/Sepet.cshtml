@@ -1,0 +1,358 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sepet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #ddd;
+            min-height: 100vh;
+            vertical-align: middle;
+            display: flex;
+            font-family: sans-serif;
+            font-size: 0.8rem;
+            font-weight: normal;
+        }
+
+        .title {
+            margin-bottom: 2vh;
+            padding-bottom: 1vh;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card {
+            margin: auto;
+            max-width: 950px;
+            width: 90%;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 1rem;
+            border: transparent;
+            background-color: white;
+        }
+
+        @@media(max-width:767px) {
+            .card {
+                margin: 3vh auto;
+            }
+        }
+
+        .cart {
+            background-color: #fff;
+            padding: 4vh 5vh;
+            border-bottom-left-radius: 1rem;
+            border-top-left-radius: 1rem;
+        }
+
+        @@media(max-width:767px) {
+            .cart {
+                padding: 4vh;
+                border-bottom-left-radius: unset;
+                border-top-right-radius: 1rem;
+            }
+        }
+
+        .summary {
+            background-color: #f8f9fa;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            padding: 4vh;
+            color: rgb(65, 65, 65);
+        }
+
+        @@media(max-width:767px) {
+            .summary {
+                border-top-right-radius: unset;
+                border-bottom-left-radius: 1rem;
+            }
+        }
+
+        .summary .col-2 {
+            padding: 0;
+        }
+
+        .summary .col-10 {
+            padding: 0;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .title b {
+            font-size: 1.5rem;
+        }
+
+        .main {
+            margin: 0;
+            padding: 1vh 0;
+            width: 100%;
+            border-bottom: 1px solid #eee;
+        }
+
+        .col-2, .col {
+            padding: 0 1vh;
+        }
+
+        a {
+            padding: 0 1vh;
+            text-decoration: none;
+        }
+
+        .close {
+            margin-left: auto;
+            font-size: 0.7rem;
+            cursor: pointer;
+            color: #aaa;
+        }
+
+        img {
+            width: 3.5rem;
+        }
+
+        .back-to-shop {
+            margin-top: 2.5rem;
+        }
+
+        h5 {
+            margin-top: 4vh;
+            font-size: 1rem;
+        }
+
+        hr {
+            margin-top: 1.25rem;
+            margin-bottom: 1.25rem;
+            border: 0;
+            border-top: 1px solid rgba(0,0,0,.1);
+        }
+
+        form {
+            padding: 2vh 0;
+        }
+
+        select {
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            padding: 1.5vh 1vh;
+            margin-bottom: 4vh;
+            outline: none;
+            width: 100%;
+            background-color: rgb(247, 247, 247);
+        }
+
+        input {
+            border: 1px solid rgba(0, 0, 0, 0.137);
+            padding: 1vh;
+            margin-bottom: 4vh;
+            outline: none;
+            width: 85%;
+            background-color: rgb(247, 247, 247);
+        }
+
+            input:focus::-webkit-input-placeholder {
+                color: transparent;
+            }
+
+        .btn {
+            background-color: #000;
+            border-color: #000;
+            color: white;
+            width: 100%;
+            font-size: 0.9rem;
+            margin-top: 4vh;
+            padding: 1vh;
+            border-radius: 0;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+            .btn:focus {
+                box-shadow: none;
+                outline: none;
+                box-shadow: none;
+                color: white;
+                -webkit-box-shadow: none;
+                -webkit-user-select: none;
+                transition: none;
+            }
+
+            .btn:hover {
+                color: white;
+            }
+
+        a {
+            color: black;
+        }
+
+            a:hover {
+                color: black;
+                text-decoration: none;
+            }
+
+        .quantity {
+            display: flex;
+            align-items: center;
+        }
+
+            .quantity a {
+                border: 1px solid #dee2e6;
+                padding: 0 8px;
+                height: 25px;
+                line-height: 23px;
+            }
+
+                .quantity a.border {
+                    border: 1px solid #dee2e6;
+                }
+
+        .arrow-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .code-input-container {
+            display: flex;
+        }
+
+            .code-input-container input {
+                margin-bottom: 0;
+                border-right: none;
+            }
+
+            .code-input-container button {
+                width: 15%;
+                background: #f8f9fa;
+                border: 1px solid rgba(0, 0, 0, 0.137);
+                border-left: none;
+            }
+
+        .home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .home-button:hover {
+                background-color: #f8f9fa;
+            }
+    </style>
+</head>
+<body>
+    <!-- Home button at top left -->
+    <a href="/Home/Index/Shared/_Layout" class="home-button">←  Alışverişe Devam Et</a>
+
+    <div class="card">
+        <div class="row">
+            <div class="col-md-8 cart">
+                <div class="title">
+                    <div class="row">
+                        <div class="col"><h4><b>Sepetim</b></h4></div>
+                        <div class="col align-self-center text-right text-muted">3 items</div>
+                    </div>
+                </div>
+
+                <!-- Item 1 -->
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
+                    <div class="col">
+                        <div class="row text-muted">Shirt</div>
+                        <div class="row">Cotton T-shirt</div>
+                    </div>
+                    <div class="col">
+                        <div class="quantity">
+                            <a href="#" class="arrow-btn">-</a>
+                            <a href="#" class="border">1</a>
+                            <a href="#" class="arrow-btn">+</a>
+                        </div>
+                    </div>
+                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/ba3tvGm.jpg"></div>
+                    <div class="col">
+                        <div class="row text-muted">Shirt</div>
+                        <div class="row">Cotton T-shirt</div>
+                    </div>
+                    <div class="col">
+                        <div class="quantity">
+                            <a href="#" class="arrow-btn">-</a>
+                            <a href="#" class="border">1</a>
+                            <a href="#" class="arrow-btn">+</a>
+                        </div>
+                    </div>
+                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/pHQ3xT3.jpg"></div>
+                    <div class="col">
+                        <div class="row text-muted">Shirt</div>
+                        <div class="row">Cotton T-shirt</div>
+                    </div>
+                    <div class="col">
+                        <div class="quantity">
+                            <a href="#" class="arrow-btn">-</a>
+                            <a href="#" class="border">1</a>
+                            <a href="#" class="arrow-btn">+</a>
+                        </div>
+                    </div>
+                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                </div>
+            </div>
+            <div class="col-md-4 summary">
+                <div><h5><b>Sipariş Özeti</b></h5></div>
+                <hr>
+                <div class="summary-item">
+                    <div>ITEMS 3</div>
+                    <div>&euro; 132.00</div>
+                </div>
+
+                <!--<div>Kargo Seçenekleri</div>
+                <select>
+                    <option>Standard-Delivery- &euro;5.00</option>
+                    <option>Express Delivery- &euro;10.00</option>
+                    <option>Free Delivery- &euro;0.00</option>
+				</select>-->
+
+                <div>İndirim Kodu</div>
+                <div class="code-input-container">
+                    <input id="code" placeholder="Enter your code">
+                    <button>→</button>
+                </div>
+
+                <hr>
+                <div class="summary-item" style="font-weight: bold;">
+                    <div>Sepet Tutarı</div>
+                    <div>&euro; 137.00</div>
+                </div>
+
+                <button class="btn">Alışverişi Tamamla</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
