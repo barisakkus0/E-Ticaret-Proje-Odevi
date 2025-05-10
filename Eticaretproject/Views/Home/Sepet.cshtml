@@ -239,28 +239,33 @@
                 border-left: none;
             }
 
-        .home-button {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            padding: 10px 15px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+        .gri-buton {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #e0e0e0;
+            color: #111;
+            font-size: 16px;
+            font-weight: 600;
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
-            .home-button:hover {
-                background-color: #f8f9fa;
+            .gri-buton:hover {
+                background-color:gray;
+                transform: translateY(-2px);
             }
+
     </style>
 </head>
 <body>
     <!-- Home button at top left -->
-    <a href="/Home/Index/Shared/_Layout" class="home-button">←  Alışverişe Devam Et</a>
+    <div style="text-align: center; margin-top: 50px;">
+        <a href="@Url.Action("Index", "Home")" class="gri-buton">
+            🛒 Alışverişe Devam Et
+        </a>
+    </div>
 
     <div class="card">
         <div class="row">

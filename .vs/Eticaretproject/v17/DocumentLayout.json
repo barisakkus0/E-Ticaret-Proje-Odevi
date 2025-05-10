@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\\u0130sa acar\\desktop\\proje\\e-ticaret-proje-odevi\\eticaretproject\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\home\\admin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\\u0130sa acar\\desktop\\proje\\e-ticaret-proje-odevi\\eticaretproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\\u0130sa acar\\desktop\\proje\\e-ticaret-proje-odevi\\eticaretproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\\u0130sa acar\\desktop\\proje\\e-ticaret-proje-odevi\\eticaretproject\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\\u0130sa acar\\desktop\\proje\\e-ticaret-proje-odevi\\eticaretproject\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\\u0130sa acar\\desktop\\proje\\e-ticaret-proje-odevi\\eticaretproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|c:\\users\\\u0130sa acar\\desktop\\proje\\e-ticaret-proje-odevi\\eticaretproject\\views\\home\\sepet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CFD07D0-05C7-442A-B0D3-22BAC17E73C5}|Eticaretproject\\Eticaretproject.csproj|solutionrelative:eticaretproject\\views\\home\\sepet.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,21 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "SignUp.cshtml",
               "DocumentMoniker": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\SignUp.cshtml",
               "RelativeDocumentMoniker": "Eticaretproject\\Views\\Home\\SignUp.cshtml",
               "ToolTip": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\SignUp.cshtml",
               "RelativeToolTip": "Eticaretproject\\Views\\Home\\SignUp.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAABsAAAAAAAAAA==",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwEkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-08T19:23:06.305Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Admin.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\Admin.cshtml",
+              "RelativeDocumentMoniker": "Eticaretproject\\Views\\Home\\Admin.cshtml",
+              "ToolTip": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\Admin.cshtml",
+              "RelativeToolTip": "Eticaretproject\\Views\\Home\\Admin.cshtml",
+              "ViewState": "AgIAAM0CAAAAAAAAAAD4v90CAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T10:17:05.24Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Eticaretproject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Eticaretproject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T10:16:32.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Eticaretproject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Eticaretproject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T09:24:25.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Eticaretproject\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Eticaretproject\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwFkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T09:04:21.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Eticaretproject\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Eticaretproject\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAANIAAAAAAAAAAAAAAN8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T10:00:44.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Sepet.cshtml",
+              "DocumentMoniker": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\Sepet.cshtml",
+              "RelativeDocumentMoniker": "Eticaretproject\\Views\\Home\\Sepet.cshtml",
+              "ToolTip": "C:\\Users\\\u0130sa Acar\\Desktop\\proje\\E-Ticaret-Proje-Odevi\\Eticaretproject\\Views\\Home\\Sepet.cshtml",
+              "RelativeToolTip": "Eticaretproject\\Views\\Home\\Sepet.cshtml",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAAAP8AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-09T09:57:53.412Z"
             }
           ]
         }

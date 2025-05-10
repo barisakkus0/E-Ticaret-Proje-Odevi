@@ -32,9 +32,32 @@
 	<link rel="stylesheet" type="text/css" href="~/LoginScript/css/util.css">
 	<link rel="stylesheet" type="text/css" href="~/LoginScript/css/main.css">
 	<!--===============================================================================================-->
+	<style>
+		.gri-buton {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #e0e0e0;
+			color: #111;
+			font-size: 15px;
+			font-weight: 600;
+			text-decoration: none;
+			border-radius: 10px;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+
+			.gri-buton:hover {
+				background-color: #cccccc;
+				transform: translateY(-2px);
+			}
+	</style>
 </head>
 <body>
-
+	<div style="position: absolute; top: 20px; left: 20px;">
+		<a href="@Url.Action("Index", "Home")" class="gri-buton">
+			🏠 Anasayfa
+		</a>
+	</div>
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">

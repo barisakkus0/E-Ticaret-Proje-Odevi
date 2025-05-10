@@ -34,8 +34,12 @@
             {
                 return View();
             }
+            public IActionResult Admin()
+            {
+                return View();
+            }
 
-            public IActionResult Urunler()
+        public IActionResult Urunler()
             {
                 // Ürünleri kategorileriyle birlikte eager loading ile getiriyoruz
                 var urunler = _context.Urunlers.Include(u => u.Kategori).ToList();
