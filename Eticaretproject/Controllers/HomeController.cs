@@ -34,7 +34,15 @@
             {
                 return View();
             }
-            public IActionResult Admin()
+            public IActionResult Sepet()
+            {
+                return View();
+            }
+            public IActionResult Odeme()
+            {
+                return View();
+            }
+        public IActionResult Admin()
             {
                 return View();
             }
@@ -58,10 +66,7 @@
                 return View(kullanicilar);
             }
 
-            public IActionResult Sepet()
-            {
-                return View();
-            }
+
 
             public IActionResult Siparisler()
             {

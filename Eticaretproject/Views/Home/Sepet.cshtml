@@ -6,358 +6,597 @@
 }
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-    <title>Sepet</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepet</title>
     <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
         body {
-            background: #ddd;
-            min-height: 100vh;
-            vertical-align: middle;
+            background-color: #f5f5f7;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Header */
+        .header {
+            background-color: #3f26ad;
+            padding: 15px 20px;
             display: flex;
-            font-family: sans-serif;
-            font-size: 0.8rem;
-            font-weight: normal;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .title {
-            margin-bottom: 2vh;
-            padding-bottom: 1vh;
-            border-bottom: 1px solid #eee;
-        }
-
-        .card {
-            margin: auto;
-            max-width: 950px;
-            width: 90%;
-            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            border-radius: 1rem;
-            border: transparent;
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
             background-color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
-        @@media(max-width:767px) {
-            .card {
-                margin: 3vh auto;
+            .logo span {
+                color: #3f26ad;
             }
+
+        /* Progress bar */
+        .progress-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
         }
 
-        .cart {
-            background-color: #fff;
-            padding: 4vh 5vh;
-            border-bottom-left-radius: 1rem;
-            border-top-left-radius: 1rem;
+        .step {
+            display: flex;
+            align-items: center;
         }
 
-        @@media(max-width:767px) {
-            .cart {
-                padding: 4vh;
-                border-bottom-left-radius: unset;
-                border-top-right-radius: 1rem;
-            }
+        .step-number {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #3f26ad;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 10px;
         }
 
-        .summary {
-            background-color: #f8f9fa;
-            border-top-right-radius: 1rem;
-            border-bottom-right-radius: 1rem;
-            padding: 4vh;
-            color: rgb(65, 65, 65);
+        .step-text {
+            font-weight: bold;
         }
 
-        @@media(max-width:767px) {
-            .summary {
-                border-top-right-radius: unset;
-                border-bottom-left-radius: 1rem;
-            }
+        .step-divider {
+            width: 100px;
+            height: 2px;
+            background-color: #ddd;
+            margin: 0 20px;
         }
 
-        .summary .col-2 {
-            padding: 0;
+        .step.inactive .step-number {
+            background-color: #ccc;
         }
 
-        .summary .col-10 {
-            padding: 0;
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
-        .row {
-            margin: 0;
+        /* Main content */
+        .main-content {
+            flex: 1;
+            min-width: 300px;
         }
 
-        .title b {
-            font-size: 1.5rem;
+        /* Alert */
+        .alert {
+            background-color: #ffeeee;
+            border-left: 4px solid #3f26ad;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #333;
+            font-size: 14px;
         }
 
-        .main {
-            margin: 0;
-            padding: 1vh 0;
-            width: 100%;
+        /* Cart section */
+        .cart-section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .cart-header {
+            padding: 15px 20px;
             border-bottom: 1px solid #eee;
         }
 
-        .col-2, .col {
-            padding: 0 1vh;
+        .cart-title {
+            font-size: 20px;
+            font-weight: 600;
         }
 
-        a {
-            padding: 0 1vh;
-            text-decoration: none;
+        /* Cart items */
+        .cart-items {
+            padding: 0;
         }
 
-        .close {
-            margin-left: auto;
-            font-size: 0.7rem;
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+
+        .cart-item-image {
+            width: 80px;
+            height: 100px;
+            object-fit: contain;
+            margin-right: 20px;
+            border: 1px solid #eee;
+            padding: 5px;
+        }
+
+        .cart-item-details {
+            flex: 1;
+        }
+
+        .cart-item-category {
+            color: #777;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .cart-item-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .cart-item-variant {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .cart-item-price {
+            font-weight: 600;
+            font-size: 18px;
+            color: #333;
+            margin-left: 20px;
+            white-space: nowrap;
+        }
+
+        .cart-item-actions {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .quantity-btn {
+            background: none;
+            border: none;
+            width: 30px;
+            height: 30px;
+            font-size: 14px;
             cursor: pointer;
-            color: #aaa;
+            transition: background-color 0.2s;
         }
 
-        img {
-            width: 3.5rem;
-        }
-
-        .back-to-shop {
-            margin-top: 2.5rem;
-        }
-
-        h5 {
-            margin-top: 4vh;
-            font-size: 1rem;
-        }
-
-        hr {
-            margin-top: 1.25rem;
-            margin-bottom: 1.25rem;
-            border: 0;
-            border-top: 1px solid rgba(0,0,0,.1);
-        }
-
-        form {
-            padding: 2vh 0;
-        }
-
-        select {
-            border: 1px solid rgba(0, 0, 0, 0.137);
-            padding: 1.5vh 1vh;
-            margin-bottom: 4vh;
-            outline: none;
-            width: 100%;
-            background-color: rgb(247, 247, 247);
-        }
-
-        input {
-            border: 1px solid rgba(0, 0, 0, 0.137);
-            padding: 1vh;
-            margin-bottom: 4vh;
-            outline: none;
-            width: 85%;
-            background-color: rgb(247, 247, 247);
-        }
-
-            input:focus::-webkit-input-placeholder {
-                color: transparent;
+            .quantity-btn:hover {
+                background-color: #f5f5f5;
             }
+
+        .quantity-input {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border: none;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        .delete-btn {
+            background: none;
+            border: none;
+            color: #999;
+            cursor: pointer;
+            margin-left: 15px;
+            font-size: 18px;
+        }
+
+            .delete-btn:hover {
+                color: #3f26ad;
+            }
+
+        .cart-item-delivery {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .cart-item-delivery-icon {
+            margin-right: 5px;
+        }
+
+        /* Cart actions */
+        .cart-actions {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
 
         .btn {
-            background-color: #000;
-            border-color: #000;
-            color: white;
-            width: 100%;
-            font-size: 0.9rem;
-            margin-top: 4vh;
-            padding: 1vh;
-            border-radius: 0;
-            text-transform: uppercase;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
             cursor: pointer;
-        }
-
-            .btn:focus {
-                box-shadow: none;
-                outline: none;
-                box-shadow: none;
-                color: white;
-                -webkit-box-shadow: none;
-                -webkit-user-select: none;
-                transition: none;
-            }
-
-            .btn:hover {
-                color: white;
-            }
-
-        a {
-            color: black;
-        }
-
-            a:hover {
-                color: black;
-                text-decoration: none;
-            }
-
-        .quantity {
+            transition: all 0.2s;
+            border: none;
             display: flex;
             align-items: center;
         }
 
-            .quantity a {
-                border: 1px solid #dee2e6;
-                padding: 0 8px;
-                height: 25px;
-                line-height: 23px;
-            }
-
-                .quantity a.border {
-                    border: 1px solid #dee2e6;
-                }
-
-        .arrow-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+        .btn-outline {
+            background-color: transparent;
+            color: #333;
         }
 
-        .summary-item {
+            .btn-outline:hover {
+                color: #3f26ad;
+            }
+
+        .btn-icon {
+            margin-right: 5px;
+        }
+
+        /* Order summary */
+        .order-summary {
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            align-self: flex-start;
+        }
+
+        .summary-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .summary-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .summary-content {
+            padding: 15px 20px;
+        }
+
+        .summary-row {
             display: flex;
             justify-content: space-between;
             margin-bottom: 10px;
+            font-size: 14px;
         }
 
-        .code-input-container {
-            display: flex;
-        }
-
-            .code-input-container input {
-                margin-bottom: 0;
-                border-right: none;
+            .summary-row.total {
+                font-size: 18px;
+                font-weight: 600;
+                padding-top: 15px;
+                border-top: 1px solid #eee;
+                margin-top: 15px;
             }
 
-            .code-input-container button {
-                width: 15%;
-                background: #f8f9fa;
-                border: 1px solid rgba(0, 0, 0, 0.137);
-                border-left: none;
-            }
-
-        .gri-buton {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #e0e0e0;
-            color: #111;
+        .checkout-btn {
+            background-color: #3f26ad;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
             font-size: 16px;
             font-weight: 600;
-            text-decoration: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.2s;
         }
 
-            .gri-buton:hover {
-                background-color:gray;
-                transform: translateY(-2px);
+            .checkout-btn:hover {
+                background-color: #3f26ad;
             }
 
+        .discount-row {
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .discount-text {
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .discount-icon {
+            margin-right: 5px;
+        }
+
+        /* Responsive */
+        @@media (max-width: 768px) {
+            .container
+
+        {
+            flex-direction: column;
+        }
+
+        .order-summary {
+            width: 100%;
+        }
+
+        .cart-item {
+            flex-wrap: wrap;
+        }
+
+        .cart-item-price {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        .cart-item-actions {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+
+        .step-divider {
+            width: 50px;
+        }
+
+        }
     </style>
 </head>
 <body>
-    <!-- Home button at top left -->
-    <div style="text-align: center; margin-top: 50px;">
-        <a href="@Url.Action("Index", "Home")" class="gri-buton">
-            🛒 Alışverişe Devam Et
-        </a>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo"><span>OOPG19</span></div>
+        <div></div> <!-- Placeholder for other header elements -->
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-text">Sepet</div>
+        </div>
+        <div class="step-divider"></div>
+        <div class="step inactive">
+            <div class="step-number">2</div>
+            <div class="step-text">Teslimat ve Ödeme</div>
+        </div>
     </div>
 
-    <div class="card">
-        <div class="row">
-            <div class="col-md-8 cart">
-                <div class="title">
-                    <div class="row">
-                        <div class="col"><h4><b>Sepetim</b></h4></div>
-                        <div class="col align-self-center text-right text-muted">3 items</div>
+    <div class="container">
+        <div class="main-content">
+            <!-- Cart Section -->
+            <section class="cart-section">
+                <div class="cart-header">
+                    <h1 class="cart-title">Sepet</h1>
+                </div>
+
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div class="cart-item" data-id="1">
+                        <img src="https://via.placeholder.com/80x100" alt="Samsung Galaxy A55" class="cart-item-image">
+                        <div class="cart-item-details">
+                            <div class="cart-item-category">Satıcı: Akıllı Teknoloji</div>
+                            <h3 class="cart-item-name">Samsung Galaxy A55 5G 8 GB RAM 128 GB</h3>
+                            <p class="cart-item-variant">Siyah Cep Telefonu (Samsung Türkiye Garantili)</p>
+                            <div class="cart-item-delivery">
+                                <span class="cart-item-delivery-icon">🚚</span> Adrese Teslimat
+                            </div>
+                        </div>
+                        <div class="cart-item-price">17.449 TL</div>
+                        <div class="cart-item-actions">
+                            <div class="quantity-control">
+                                <button class="quantity-btn decrease">-</button>
+                                <input type="number" min="1" value="1" class="quantity-input">
+                                <button class="quantity-btn increase">+</button>
+                            </div>
+                            <button class="delete-btn" title="Sil">🗑️</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item 1 -->
-                <div class="row main align-items-center">
-                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg"></div>
-                    <div class="col">
-                        <div class="row text-muted">Shirt</div>
-                        <div class="row">Cotton T-shirt</div>
-                    </div>
-                    <div class="col">
-                        <div class="quantity">
-                            <a href="#" class="arrow-btn">-</a>
-                            <a href="#" class="border">1</a>
-                            <a href="#" class="arrow-btn">+</a>
-                        </div>
-                    </div>
-                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
+                <!-- Cart Actions -->
+                <div class="cart-actions">
+                    <button class="btn btn-outline">
+                        <span class="btn-icon">←</span> Alışverişe Devam Et
+                    </button>
+                    <button class="btn btn-outline">
+                        <span class="btn-icon">🗑️</span> Sepeti Boşalt
+                    </button>
                 </div>
+            </section>
+        </div>
 
-                <!-- Item 2 -->
-                <div class="row main align-items-center">
-                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/ba3tvGm.jpg"></div>
-                    <div class="col">
-                        <div class="row text-muted">Shirt</div>
-                        <div class="row">Cotton T-shirt</div>
-                    </div>
-                    <div class="col">
-                        <div class="quantity">
-                            <a href="#" class="arrow-btn">-</a>
-                            <a href="#" class="border">1</a>
-                            <a href="#" class="arrow-btn">+</a>
-                        </div>
-                    </div>
-                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="row main align-items-center">
-                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/pHQ3xT3.jpg"></div>
-                    <div class="col">
-                        <div class="row text-muted">Shirt</div>
-                        <div class="row">Cotton T-shirt</div>
-                    </div>
-                    <div class="col">
-                        <div class="quantity">
-                            <a href="#" class="arrow-btn">-</a>
-                            <a href="#" class="border">1</a>
-                            <a href="#" class="arrow-btn">+</a>
-                        </div>
-                    </div>
-                    <div class="col">&euro; 44.00 <span class="close">&#10005;</span></div>
-                </div>
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <div class="summary-header">
+                <h2 class="summary-title">Sipariş Özeti</h2>
             </div>
-            <div class="col-md-4 summary">
-                <div><h5><b>Sipariş Özeti</b></h5></div>
-                <hr>
-                <div class="summary-item">
-                    <div>ITEMS 3</div>
-                    <div>&euro; 132.00</div>
+            <div class="summary-content">
+                <div class="summary-row">
+                    <span>1 Ürün</span>
+                    <span></span>
+                </div>
+                <div class="summary-row">
+                    <span>Sipariş Tutarı (KDV Dahil)</span>
+                    <span>17.449 TL</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Toplam</span>
+                    <span>17.449 TL</span>
                 </div>
 
-                <!--<div>Kargo Seçenekleri</div>
-                <select>
-                    <option>Standard-Delivery- &euro;5.00</option>
-                    <option>Express Delivery- &euro;10.00</option>
-                    <option>Free Delivery- &euro;0.00</option>
-				</select>-->
+                <form action="/Home/Odeme" method="get">
+                    <button type="submit" class="checkout-btn">Alışverişi Tamamla</button>
+                </form>
 
-                <div>İndirim Kodu</div>
-                <div class="code-input-container">
-                    <input id="code" placeholder="Enter your code">
-                    <button>→</button>
-                </div>
 
-                <hr>
-                <div class="summary-item" style="font-weight: bold;">
-                    <div>Sepet Tutarı</div>
-                    <div>&euro; 137.00</div>
-                </div>
-
-                <button class="btn">Alışverişi Tamamla</button>
             </div>
         </div>
     </div>
+
+    <!-- Related Products -->
+   
+
+    <script>
+        // Get all elements
+        const cartItems = document.querySelector('.cart-items');
+        const subtotalElement = document.querySelector('.summary-row:nth-child(2) span:last-child');
+        const totalElement = document.querySelector('.summary-row.total span:last-child');
+
+        // Initialize cart
+        let items = [
+            { id: 1, name: 'Samsung Galaxy A55 5G 8 GB RAM 128 GB', price: 17449, quantity: 1 }
+        ];
+
+        // Add event listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            // Quantity buttons
+            document.querySelectorAll('.quantity-btn').forEach(btn => {
+                btn.addEventListener('click', handleQuantityChange);
+            });
+
+            // Delete buttons
+            document.querySelectorAll('.delete-btn').forEach(btn => {
+                btn.addEventListener('click', handleDeleteItem);
+            });
+
+            // Empty cart button
+            document.querySelector('.cart-actions .btn-outline:last-child').addEventListener('click', emptyCart);
+
+            // Continue shopping button
+            document.querySelector('.cart-actions .btn-outline:first-child').addEventListener('click', () => {
+            });
+
+            // Checkout button
+            document.querySelector('.checkout-btn').addEventListener('click', () => {
+            });
+            // Update cart summary
+            updateCartSummary();
+        });
+
+        // Handle quantity change
+        function handleQuantityChange(e) {
+            const btn = e.target;
+            const item = btn.closest('.cart-item');
+            const itemId = parseInt(item.dataset.id);
+            const input = item.querySelector('.quantity-input');
+            let quantity = parseInt(input.value);
+
+            if (btn.classList.contains('increase')) {
+                quantity++;
+            } else if (btn.classList.contains('decrease') && quantity > 1) {
+                quantity--;
+            }
+
+            input.value = quantity;
+
+            // Update item quantity in items array
+            const itemIndex = items.findIndex(i => i.id === itemId);
+            if (itemIndex !== -1) {
+                items[itemIndex].quantity = quantity;
+                updateCartSummary();
+
+                // Update price display
+                const priceElement = item.querySelector('.cart-item-price');
+                const price = items[itemIndex].price * quantity;
+                priceElement.textContent = formatPrice(price);
+            }
+        }
+
+        // Handle delete item
+        function handleDeleteItem(e) {
+            const item = e.target.closest('.cart-item');
+            const itemId = parseInt(item.dataset.id);
+
+            if (confirm('Bu ürünü sepetten çıkarmak istediğinize emin misiniz?')) {
+                // Remove item from DOM
+                item.remove();
+
+                // Remove item from items array
+                items = items.filter(i => i.id !== itemId);
+
+                // Update cart summary
+                updateCartSummary();
+
+                // Show empty cart if no items left
+                if (items.length === 0) {
+                    emptyCart();
+                }
+            }
+        }
+
+        // Empty cart
+        function emptyCart() {
+            if (confirm('Sepetinizi boşaltmak istediğinize emin misiniz?')) {
+                cartItems.innerHTML = '<div class="cart-item" style="justify-content: center; padding: 40px;">Sepetinizde ürün bulunmamaktadır.</div>';
+                items = [];
+                updateCartSummary();
+            }
+        }
+
+        // Update cart summary
+        function updateCartSummary() {
+            // Calculate subtotal
+            const subtotal = items.reduce((total, item) => total + (item.price * item.quantity), 0);
+            subtotalElement.textContent = formatPrice(subtotal);
+
+            // Calculate total
+            totalElement.textContent = formatPrice(subtotal);
+        }
+
+        // Format price
+        function formatPrice(price) {
+            return price.toLocaleString('tr-TR') + ' TL';
+        }
+    </script>
 </body>
 </html>
